@@ -11,6 +11,6 @@ public class HelloArvore {
 		arvoreBinario.removeNo("esquerda", arvoreBinario.getRoot());
 		arvoreBinario.removeNo("direita", arvoreBinario.getRoot());
 		
-		arvoreBinario.buscaPreOrdem(arvoreBinario.getRoot());
+		arvoreBinario.busca("raiz", arvoreBinario.getRoot());
 	}
 }

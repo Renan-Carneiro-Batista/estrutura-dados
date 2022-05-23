@@ -59,9 +59,22 @@ public class ArvoreBinario {
 		if(no.getDireita() != null) {
 			buscaPreOrdem(no.getDireita());
 		}
-		
 	}
 
+	public void busca(String descricao, NoBinario no) {
+		if(no.getEsquerda() != null && no.getDescricao() != descricao) {
+			buscaPreOrdem(no.getEsquerda());
+		}
+		if(no.getDireita() != null && no.getDescricao() != descricao) {
+			buscaPreOrdem(no.getDireita());
+		}
+		if(no.getDescricao() == descricao) {
+			System.out.println("Nó encontrado.");
+		}else {
+			System.out.println("Nó não encontrado.");
+		}
+	}
+	
 	public NoBinario getRoot() {
 		return root;
 	}
