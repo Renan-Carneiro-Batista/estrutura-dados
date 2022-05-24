@@ -61,18 +61,22 @@ public class ArvoreBinario {
 		}
 	}
 
-	public void busca(String descricao, NoBinario no) {
-		if(no.getEsquerda() != null && no.getDescricao() != descricao) {
-			buscaPreOrdem(no.getEsquerda());
-		}
-		if(no.getDireita() != null && no.getDescricao() != descricao) {
-			buscaPreOrdem(no.getDireita());
-		}
+	public boolean buscarNo(String descricao) {
+			return busca(descricao, root);
+	}
+	
+	public boolean busca(String descricao, NoBinario no) {
 		if(no.getDescricao() == descricao) {
-			System.out.println("Nó encontrado.");
-		}else {
-			System.out.println("Nó não encontrado.");
+			return true;
 		}
+		if(no.getEsquerda() != null) {
+			busca(descricao, no.getEsquerda());
+		}
+		if(no.getDireita() != null) {
+			busca(descricao, no.getDireita());
+		}
+		
+		return false;
 	}
 	
 	public NoBinario getRoot() {
@@ -82,7 +86,4 @@ public class ArvoreBinario {
 	public void setRoot(NoBinario root) {
 		this.root = root;
 	}
-	
-	
-	
 }
