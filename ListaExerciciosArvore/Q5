@@ -1,3 +1,4 @@
 5. Quantos antecedentes tem um nó no nível n em uma árvore binária? Prove sua resposta.
 
-Uma árvore binária que tenha todas as suas folhas completas possui o número de nós (N), em relação ao total de níveis da árvore (n), dado pela expressão: N = 2^n - 1. Assim sendo, um nó que esteja no nível n tém N antecedentes.
+Uma árvore binária que tenha todas as suas folhas completas possui o número de nós (N), em relação ao total de níveis da árvore (n), 
+dado pela expressão: N = 2^n - 1. Assim sendo, um nó que esteja no nível n tém N antecedentes.
