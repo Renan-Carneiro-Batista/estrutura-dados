@@ -1,0 +1,3 @@
+2. Escreva um algoritmo que traga a soma de todos os valores de uma árvore. Qual a sua complexidade? Pesquise sobre complexidade de algoritmos e justifique.
+
+Levando em consideração o tempo de execução do algoritmo e o tamanho da entrada, pode-se afirmar que a árvore binária tem uma menor complexidade em relação a árvore AVL.
