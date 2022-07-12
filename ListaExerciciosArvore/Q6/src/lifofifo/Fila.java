@@ -23,4 +23,3 @@ public class Fila {
 		System.out.println("\nO algoritmo foi executado em " + tempoTotal + "ms.");
 	}
 }
-
